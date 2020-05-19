@@ -1,0 +1,16 @@
+{
+    "name": "iotyun/oauth2-server-thinkphp",
+    "description": "A plugin for implementing an OAuth2 server in ThinPHP6. Built on top of the PHP League's OAuth2 Server.",
+    "type": "library",
+    "require": {
+        "php": ">=7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iotyun",
+            "email": "ytpay@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
