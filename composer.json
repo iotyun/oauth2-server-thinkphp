@@ -3,7 +3,10 @@
     "description": "A plugin for implementing an OAuth2 server in ThinPHP6. Built on top of the PHP League's OAuth2 Server.",
     "type": "library",
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.2",
+        "topthink/framework": "^6.0",
+        "itxq/think-phinx":"^1.0",
+        "league/oauth2-server": "^8.1"
     },
     "license": "MIT",
     "authors": [
@@ -12,5 +15,14 @@
             "email": "ytpay@qq.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "iotyun\\oauth2Server\\": "src/"
+        }
+    },
+    
+    "extra": {
+        "itxq-phinx": "database/migrations"
+    },
     "minimum-stability": "dev"
 }
