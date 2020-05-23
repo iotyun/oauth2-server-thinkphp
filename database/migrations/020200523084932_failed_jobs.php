@@ -32,8 +32,8 @@ class FailedJobs extends Migrator
         $table = $this->table('failed_jobs', ['engine' => 'MyISAM', 'collation' => 'utf8mb4_unicode_ci', 'comment' => '' ,'id' => 'id','signed' => true ,'primary_key' => ['id']]);
         $table->addColumn('connection', 'text', ['limit' => MysqlAdapter::TEXT_MEDIUM,'null' => false,'signed' => false,'comment' => '',])
 			->addColumn('queue', 'text', ['limit' => MysqlAdapter::TEXT_MEDIUM,'null' => false,'signed' => false,'comment' => '',])
-			->addColumn('payload', 'text', ['limit' => M,'null' => false,'signed' => false,'comment' => '',])
-			->addColumn('exception', 'text', ['limit' => M,'null' => false,'signed' => false,'comment' => '',])
+			->addColumn('payload', 'text', ['limit' => 100,'null' => false,'signed' => false,'comment' => '',])
+			->addColumn('exception', 'text', ['limit' => 100,'null' => false,'signed' => false,'comment' => '',])
 			->addColumn('failed_at', 'timestamp', ['null' => false,'default' => 'CURRENT_TIMESTAMP','signed' => false,'comment' => '',])
             ->create();
     }
